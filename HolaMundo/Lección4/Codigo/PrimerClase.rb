@@ -30,8 +30,17 @@
   else
     puts "Este objeto no tiene el metodo Correr"  
   end
-  d.ladrar
-  d.saludar
+  #d.ladrar
+  #d.saludar
+  
+  if d.respond_to?("ladrar")
+    puts 'Respondiendo al metodo Ladrar'
+    d.ladrar
+  else
+    puts 'No existe el metodo Ladrar'  
+  end
+  
+  d.saludar 
   
   #CON ESTA VARIABLE APUNTAMOS AL MISMO OBJETO
   
