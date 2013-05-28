@@ -1,0 +1,3 @@
+class FicherosLecturaEscritura
+  
+end

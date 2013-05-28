@@ -20,7 +20,7 @@
   
   #PARA USAR LOS NUEVOS OBJETOS
   #SE USA EL METODO NEW
-  
+  #SE CREA UN NUEVO OBJETO DE LA CLASE PERRO
   d =  Perro.new('Labrador','Benzy')
   puts d.methods.sort
   puts "La id del objeto es #{d.object_id}"
@@ -43,10 +43,10 @@
   d.saludar 
   
   #CON ESTA VARIABLE APUNTAMOS AL MISMO OBJETO
-  
   d1 = d
   d1.saludar
   
   d = nil
   d1.saludar
+  
  
