@@ -58,6 +58,8 @@ puts '===============METODO PARA CONOCER SI ES READABLE=========================
    puts 'EL ARCHIVO EXISTE'
    if File.readable?(y)
      puts 'EL ARCHIVO ES READABLE'
+   else
+     puts 'EL ARCHIVO NO ES READABLE' 
  end 
  end  
 puts "\n"
@@ -65,7 +67,9 @@ puts '===============METODO PARA CONOCER SI WRITABLE============================
  if File.exists?(y)
    puts 'EL ARCHIVO EXISTE'
    if File.writable?(y)
-   puts 'EL ARCHIVO ES WRITABLE',writable
+   puts 'EL ARCHIVO ES WRITABLE'
+   else
+     puts 'EL ARCHIVO NO ES WRITABLE'
  end  
  end
 puts "\n"
@@ -73,7 +77,9 @@ puts '===============METODO PARA CONOCER SI ES EXECUTABLE=======================
   if File.exists?(y)
     puts 'EL ARCHIVO EXISTE'
     if File.executable?(y)
-    puts 'EL ARCHIVO ES EJECUTABLE',executable
+    puts 'EL ARCHIVO ES EJECUTABLE'
+    else
+      puts 'EL ARCHIVO NO ES EJECUTABLE'
   end  
   end   
    
